@@ -17,6 +17,7 @@ end
 
 get "/css/:stylesheet.css" do
   content_type "text/css", :charset => "UTF-8"
+  response['Expires'] = (Time.now + 60*60*24).httpdate
   sass :"css/#{params[:stylesheet]}"
 end
 
