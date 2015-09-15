@@ -1,9 +1,0 @@
-#body_content.cook
-  %h1 recipes
-  %p 
-    These are some recipes I like.
-  %ul
-    -@recipe_list.each do |recipe|
-      %li{:class => 'recipe_list'}
-        %a{:title => "#{recipe[:title]}", :href => "/recipes/#{recipe[:link]}"}#{recipe[:title]}
-

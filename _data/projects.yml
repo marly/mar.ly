@@ -1,0 +1,15 @@
+- name: Quibble
+  description: An anonymous online and text-based customer feedback engine.
+  url: https://quibble.it
+
+- name: Klee
+  description: 
+    A super-simple CMS I built for an artist friend.
+  url: https://github.com/marly/klee
+
+- name: Morse
+  description: Learn morse code in your browser!
+  url: http://learnmorse.online
+
+  
+  

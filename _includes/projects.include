@@ -1,0 +1,10 @@
+<dl class="project-list">
+  {% for project in site.data.projects %}
+    <dt>
+      <a class="post-link" href="{{ project.url }}">{{ project.name }}</a>
+    </dt>
+    <dd>{{ project.description }}</dd>
+  {% endfor %}
+</dl>
+
+

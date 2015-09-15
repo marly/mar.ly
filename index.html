@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% if site.posts.size == 0 %}
+  <p>Someday I will blog. Until then, check out these cool people:</p>
+  <ul class="unstyled">
+    <li><a href="http://lea.verou.me/">Lea Verou</a> - web standards wunderkind</li> 
+    <li><a href="https://blog.jcoglan.com/">James Coglan</a> - creator of Faye</li>
+    <li><a href="http://homakov.blogspot.com/">Egor Homakov</a> - infosec</li> 
+  </ul>
+
+
+  {% else %}
+    <h1>Posts</h1>
+    <ul class='posts-list unstyled'>
+      {% for post in site.posts %}
+        <li>
+          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
